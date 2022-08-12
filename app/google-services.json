@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "5784904257",
+    "firebase_url": "https://matecarapp-default-rtdb.firebaseio.com",
+    "project_id": "matecarapp",
+    "storage_bucket": "matecarapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:5784904257:android:814204073181d1cc22dcc0",
+        "android_client_info": {
+          "package_name": "com.example.matecarapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "5784904257-5hmvj9rr6jkq2iltnmmv73h9o5islkpf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpyyr4S5qO1UTq-2EscXMVB0KSBe3I7t4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "5784904257-5hmvj9rr6jkq2iltnmmv73h9o5islkpf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#95C7CD"
+
+        tools:context=".activity.traveller.SignInActivity">
+
+
+        <include layout="@layout/action_bar_toolbar"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_person"
+            app:layout_constraintRight_toLeftOf="@+id/kayitAd"
+            app:layout_constraintBottom_toBottomOf="@id/kayitAd"
+            app:layout_constraintTop_toTopOf="@id/kayitAd"
+            />
+        <EditText
+            android:id="@+id/kayitAd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginRight="24dp"
+            android:hint="Adınızı Soyadınızı Giriniz"
+            android:inputType="text"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_mail"
+            app:layout_constraintRight_toLeftOf="@+id/kayitemail"
+            app:layout_constraintBottom_toBottomOf="@id/kayitemail"
+            app:layout_constraintTop_toTopOf="@id/kayitemail"
+            />
+
+        <EditText
+            android:id="@+id/kayitemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="24dp"
+            android:hint="E-mail Adresini Giriniz"
+            android:inputType="textEmailAddress"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/kayitAd" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_lock"
+            app:layout_constraintRight_toLeftOf="@+id/kayitSifre"
+            app:layout_constraintBottom_toBottomOf="@id/kayitSifre"
+            app:layout_constraintTop_toTopOf="@id/kayitSifre"
+            />
+
+        <EditText
+            android:id="@+id/kayitSifre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="24dp"
+            android:hint="Şifre Giriniz"
+            android:inputType="text"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/kayitemail" />
+
+        <Button
+            android:id="@+id/kayitButon"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:backgroundTint="#6475D3"
+            android:text="Kayıt Ol"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

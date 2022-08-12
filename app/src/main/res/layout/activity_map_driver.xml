@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.driver.MapDriverActivity">
+
+
+    <include layout="@layout/action_bar_toolbar"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        />
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.google.android.gms.maps.SupportMapFragment"/>
+<Button
+    android:id="@+id/butonBaglan"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Bağlan"
+    android:layout_gravity="bottom"
+    android:layout_margin="30dp"
+    android:backgroundTint="#6475D3"
+
+/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

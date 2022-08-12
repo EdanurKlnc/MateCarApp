@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MateCarApp</string>
+    <string name="title_activity_map_traveller">MapTravellerActivity</string>
+
+</resources>

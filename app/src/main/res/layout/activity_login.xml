@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".activity.LoginActivity">
+
+    <include layout="@layout/action_bar_toolbar"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_marginBottom="128dp"
+        android:src="@drawable/otostopimg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_mail"
+        app:layout_constraintRight_toLeftOf="@+id/girisemail"
+        app:layout_constraintBottom_toBottomOf="@id/girisemail"
+        app:layout_constraintTop_toTopOf="@id/girisemail"
+        />
+
+    <EditText
+        android:id="@+id/girisemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="24dp"
+        android:hint="E-mail Adresini Giriniz"
+        android:inputType="textEmailAddress"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_lock"
+        app:layout_constraintRight_toLeftOf="@+id/girisŞifre"
+        app:layout_constraintBottom_toBottomOf="@id/girisŞifre"
+        app:layout_constraintTop_toTopOf="@id/girisŞifre"
+        />
+
+    <EditText
+        android:id="@+id/girisŞifre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="24dp"
+        android:hint="Şifre Giriniz"
+        android:inputType="text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/girisemail" />
+
+    <Button
+        android:id="@+id/girisYapButon"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#6475D3"
+        android:text="Giriş Yap"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
